@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSP Meta Tag Demo</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+</head>
+<body>
+  <h2>Content Security Policy (CSP) Demo</h2>
+  <p>Open DevTools Console (F12) to see the CSP violation error blocking the inline script below.</p>
+  <script>
+    alert("This inline script will be BLOCKED by default-src 'self'!");
+  </script>
+</body>
+</html>
